@@ -2,6 +2,7 @@ define resolv_conf::create (
   $searchpath,
   $nameservers,
   $domainname = $::domain,
+  $lookup = undef,
   $options = undef,
   $config_file = $::resolv_conf::params::config_file,
   $owner = 'root',

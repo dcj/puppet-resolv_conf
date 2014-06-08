@@ -14,3 +14,6 @@ nameserver <%= ns %>
 <% if @options && !@options.empty? -%>
 options <%= @options.join(" ") %>
 <% end -%>
+<% if @lookup && !@lookup.empty? -%>
+lookup <%= @lookup %>
+<% end -%>
